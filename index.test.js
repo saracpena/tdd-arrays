@@ -67,7 +67,7 @@ describe("getFirstLast", function () {
   });
 });
 
-describe.only("sharesFirstLetter", function () {
+describe("sharesFirstLetter", function () {
   it("returns true if first letters match", function () {
     expect(sharesFirstLetter("apple", "apricot")).toBe(true);
   });
@@ -94,7 +94,7 @@ describe.only("sharesFirstLetter", function () {
   });
 });
 
-describe("quintuple", function () {
+describe.only("quintuple", function () {
   it("returns a new array with each number multiplied by 5", function () {
     expect(quintuple([1, 2, 3])).toEqual([5, 10, 15]);
   });

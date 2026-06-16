@@ -87,7 +87,11 @@ export function sharesFirstLetter(str1, str2) {
  * quintuple([]); // []
  */
 export function quintuple(numbers) {
-  // TODO
+  const result = [];
+  for (const number of numbers) {
+    result.push(number * 5);
+  }
+  return result;
 }
 
 /**
