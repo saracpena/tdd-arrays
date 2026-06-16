@@ -49,7 +49,7 @@ describe("getLast", function () {
   });
 });
 
-describe.only("getFirstLast", function () {
+describe("getFirstLast", function () {
   it("returns [first, last] for a multi-element array", function () {
     expect(getFirstLast([1, 2, 3])).toEqual([1, 3]);
   });
@@ -67,7 +67,7 @@ describe.only("getFirstLast", function () {
   });
 });
 
-describe("sharesFirstLetter", function () {
+describe.only("sharesFirstLetter", function () {
   it("returns true if first letters match", function () {
     expect(sharesFirstLetter("apple", "apricot")).toBe(true);
   });
