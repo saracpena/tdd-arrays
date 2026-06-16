@@ -137,7 +137,13 @@ export function pluralize(words) {
  * countAttendance([]); // 0
  */
 export function countAttendance(attendance) {
-
+let count = 0;
+for (const student of attendance) {
+  if (student === true){
+    count++;
+  }
+}
+  return count;
 }
 
 

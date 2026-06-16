@@ -112,7 +112,7 @@ describe("quintuple", function () {
   });
 });
 
-describe.only("pluralize", function () {
+describe("pluralize", function () {
   it("adds 's' to words not ending with 's'", function () {
     expect(pluralize(["cat", "dog"])).toEqual(["cats", "dogs"]);
   });
@@ -133,7 +133,7 @@ describe.only("pluralize", function () {
   });
 });
 
-describe("countAttendance", function () {
+describe.only("countAttendance", function () {
   it("counts the number of true values", function () {
     expect(countAttendance([true, false, true])).toBe(2);
   });
