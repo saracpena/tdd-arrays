@@ -133,7 +133,7 @@ describe("pluralize", function () {
   });
 });
 
-describe.only("countAttendance", function () {
+describe("countAttendance", function () {
   it("counts the number of true values", function () {
     expect(countAttendance([true, false, true])).toBe(2);
   });
@@ -154,7 +154,7 @@ describe.only("countAttendance", function () {
   });
 });
 
-describe("getLongestWord", function () {
+describe.only("getLongestWord", function () {
   it("returns the first longest word", function () {
     expect(getLongestWord(["sphinx", "of", "black", "quartz"])).toBe("sphinx");
   });

@@ -160,8 +160,18 @@ for (const student of attendance) {
  * getLongestWord(["a", "ab", "abc"]); // "abc"
  */
 export function getLongestWord(sentence) {
-  // TODO
+  if (sentence.length === 0) {
+    return null;
+  }
+  let longest = sentence[0];
+  for (const word of sentence){
+    if (word.length > longest.length) {
+      longest = word;
+    }
+  }
+  return longest;
 }
+
 
 /**
  * @param {string[]} playlist - an array of song titles
