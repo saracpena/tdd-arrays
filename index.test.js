@@ -13,7 +13,7 @@ import {
   findSpy,
 } from "./index.js";
 
-describe.only("getFirst", function () {
+describe("getFirst", function () {
   it("returns the first element of a number array", function () {
     expect(getFirst([1, 2, 3])).toBe(1);
   });
@@ -31,7 +31,7 @@ describe.only("getFirst", function () {
   });
 });
 
-describe("getLast", function () {
+describe.only("getLast", function () {
   it("returns the last element of a number array", function () {
     expect(getLast([1, 2, 3])).toBe(3);
   });
