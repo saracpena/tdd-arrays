@@ -112,7 +112,15 @@ export function quintuple(numbers) {
  * pluralize([]); // []
  */
 export function pluralize(words) {
-  // TODO
+  const plural = [];
+  for (const word of words) {
+    if (word.endsWith("s")){
+      plural.push(word + "es");
+    } else {
+      plural.push(word + "s");
+    }
+  }
+  return plural;
 }
 
 /**
@@ -129,8 +137,9 @@ export function pluralize(words) {
  * countAttendance([]); // 0
  */
 export function countAttendance(attendance) {
-  // TODO
+
 }
+
 
 /**
  * @param {string[]} sentence - an array of words

@@ -94,7 +94,7 @@ describe("sharesFirstLetter", function () {
   });
 });
 
-describe.only("quintuple", function () {
+describe("quintuple", function () {
   it("returns a new array with each number multiplied by 5", function () {
     expect(quintuple([1, 2, 3])).toEqual([5, 10, 15]);
   });
@@ -112,7 +112,7 @@ describe.only("quintuple", function () {
   });
 });
 
-describe("pluralize", function () {
+describe.only("pluralize", function () {
   it("adds 's' to words not ending with 's'", function () {
     expect(pluralize(["cat", "dog"])).toEqual(["cats", "dogs"]);
   });
